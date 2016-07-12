@@ -47,9 +47,6 @@ final class Torro_Forms_Wheel_Of_Fortune_Element_Type_Date extends Torro_Element
   }
 
   public function validate( $input, $element ) {
-    p( $_POST );
-    p( $this->settings );
-    p( $input );
     return $input;
   }
 }
