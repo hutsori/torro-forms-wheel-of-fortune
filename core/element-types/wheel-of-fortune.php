@@ -24,7 +24,7 @@ final class Torro_Forms_Wheel_Of_Fortune_Element_Type_Date extends Torro_Element
 
     $data['pointer_image'] = torro()->extensions()->get_registered( 'torro_forms_wheel_of_fortune' )->get_asset_url( 'arrows', 'png');
     $data['input_id'] = $this->get_input_id( $element );
-    $data['winning_text'] = $this->settings['winning_text'];
+    $data['winning_text'] = $element->settings['winning_text']->value;
 
     return $data;
   }
